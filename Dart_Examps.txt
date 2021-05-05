@@ -81,6 +81,111 @@ String EsMayor(){
   
 }
 
+
+//6
+
+ int count = 1;
+  bool loppWhile = true;
+
+  while( loppWhile ) {
+    print( " dentro del while ${ count }" );
+    count++;
+    if( count == 4 ){
+      loppWhile = false;
+    }
+  }
+
+
+  int count = 1;
+  while( count <= 10 ) {
+    print( "dentro del while ${ count }" );
+    count++;
+    if( count == 4 ){
+      break;
+    }
+  }
+
+  print( "afuera del while ");
+ 
+   
+  int n = 10; 
+  do{
+    print(n);
+    n--;
+  } while( n > 0 );
+
+  print( "salio" );
+
+  int num = 5;
+  int factorial = 1;
+
+  while( num >= 1 ) {
+    factorial = factorial * num;
+    num--; 
+  }
+
+  print( "The factorial is ${ factorial }" );
+
+  var number = "hola";
+  print( number.runtimeType );
+
+  if( number == 'hola' ) {
+    print( 'hola mundo' );
+  } else {
+    print( 'este es un numero' );
+  }
+ int count = 1;
+  bool loppWhile = true;
+
+  while( loppWhile ) {
+    print( " dentro del while ${ count }" );
+    count++;
+    if( count == 4 ){
+      loppWhile = false;
+    }
+  }
+
+
+  int count = 1;
+  while( count <= 10 ) {
+    print( "dentro del while ${ count }" );
+    count++;
+    if( count == 4 ){
+      break;
+    }
+  }
+
+  print( "afuera del while ");
+ 
+   
+  int n = 10; 
+  do{
+    print(n);
+    n--;
+  } while( n > 0 );
+
+  print( "salio" );
+
+  int num = 5;
+  int factorial = 1;
+
+  while( num >= 1 ) {
+    factorial = factorial * num;
+    num--; 
+  }
+
+  print( "The factorial is ${ factorial }" );
+
+  var number = "hola";
+  print( number.runtimeType );
+
+  if( number == 'hola' ) {
+    print( 'hola mundo' );
+  } else {
+    print( 'este es un numero' );
+  }
+
+
  //lamamamos a las funciones 
 
 void main() {
