@@ -46,6 +46,40 @@ String EsMayor(){
 
 }
 
+//5 
+
+  String funcionSwitch(){
+  String funSwitch(){
+  String grado = "B"; 
+  switch( grado ){
+    case "A": {
+        print( "Excellent");
+      }
+      break;
+    case "B": {
+      print( "good" );
+    }
+      break;
+
+    case "C": {
+      print("Fair");
+    }
+      break;
+
+    case "D": {
+      print( "Poor");
+    }
+      break;
+
+    default: {
+      print( "invalid choice");
+    }
+      break;
+  }
+  }
+ return ( funSwitch());
+  
+}
 
  //lamamamos a las funciones 
 
