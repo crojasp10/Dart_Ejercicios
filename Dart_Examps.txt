@@ -1,0 +1,59 @@
+
+//1
+int Comparandofechas1(String date) {
+  DateTime currentTime =  DateTime.now();
+  DateTime otherDate = DateTime.parse( date );
+  return currentTime.compareTo( otherDate );
+  
+  print(Comparandofechas1);
+ }
+
+//2
+
+String Comparandofechas2( String date ){
+  DateTime currentTime =  DateTime.now();
+  DateTime otherDate = DateTime.parse( date );
+  int result = currentTime.compareTo( otherDate );
+  return ( ( result >= 0 ) ? 'ahora o en el futuro': ' del pasado' ); 
+  
+  
+  print(Comparandofechas2);
+ }
+
+//3
+
+String Comparandofechas3( String date ){
+  int result =   DateTime.now().compareTo( DateTime.parse( date) );
+  return ( ( result >= 0 ) ? 'ahora o en el futuro': ' del pasado' );
+  
+  print(Comparandofechas3);
+ }
+
+//4
+String EsMayor(){
+  
+  bool esMayorFunction(int num1, int num2){
+    return(num1>num2);
+  }
+  
+  bool isTrue = true;
+  bool isTrueTwo = esMayorFunction(5, 6);
+ 
+ 
+  String esMayorAsString = ( (esMayorFunction(5, 6) == true)?"si es mayor": "no es mayor" );
+   
+  return ((esMayorAsString ));
+
+}
+
+
+ //lamamamos a las funciones 
+
+void main() {
+
+  print( Comparandofechas1('2020-11-20')/n);
+  print( Comparandofechas2('2022-09-01')) ;
+  print( Comparandofechas3('2020-11-20'));
+  print(EsMayor());
+}
+
