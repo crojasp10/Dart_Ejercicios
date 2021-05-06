@@ -184,6 +184,22 @@ String EsMayor(){
   } else {
     print( 'este es un numero' );
   }
+  
+  
+  
+  //7
+
+
+void funcionLista(){
+  
+  var list=['apples','bananas','oranges'];
+  for (int i=0; i< list.length;i++){
+    print('La fruta desde for es ${list[i]}');
+  }
+  list.forEach((String i ){
+    print("La fruta desde un each es ${i}");
+  });
+}
 
 
  //lamamamos a las funciones 
@@ -194,5 +210,7 @@ void main() {
   print( Comparandofechas2('2022-09-01')) ;
   print( Comparandofechas3('2020-11-20'));
   print(EsMayor());
+  print(funcionSwitch());
+  funcionLista();
 }
 
