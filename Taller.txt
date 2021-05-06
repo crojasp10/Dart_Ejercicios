@@ -1,0 +1,110 @@
+2//
+
+
+
+void main(){
+  
+  final numeroRacional = new Racional ();
+  numeroRacional.suma(5,10);
+  
+}
+class Racional{
+
+  int numero1 = 0;
+  int numero2 = 0;
+  
+  int suma(num1,num2) {
+    int valor=num1 + num2;
+    return valor;
+    }
+
+    int resta () => numero1 - numero2;
+  
+    int opuesto() => -(numero1 + numero2);
+  
+}
+
+
+
+13//
+
+void main(){
+  
+  final tareas = new ColaDeTrabajo();
+  tareas.mete("Trabajo1");
+  tareas.primero();
+  tareas.saca("Tarea2");
+  tareas.trabajos();
+  print(tareas.trabajo);
+}
+  
+
+class ColaDeTrabajo{
+  
+  List <String> trabajo=[];
+  
+  void mete ( String text ) {
+    trabajo.add(text);  
+  }
+  
+   dynamic primero (){
+     print (trabajo[trabajo.last()]); 
+  }
+  
+  void saca ( String text ) {
+    trabajo.removeLast();  
+  }
+  
+  List trabajos () {
+    return trabajo;  
+  }
+  
+}
+
+
+//17
+
+void main(){
+  
+  Eiffel misElementos = new Eiffel();
+  
+  misElementos.agregar("Elemento1");
+  misElementos.agregar("Elemento2");
+  misElementos.agregar("Elemento3");
+  misElementos.agregar("Elemento4");
+  misElementos.agregar("Elemento5");
+  misElementos.agregar("Elemento6");
+  misElementos.agregar("Elemento7");
+  misElementos.agregar("Elemento8");
+  misElementos.agregar("Elemento9");
+  misElementos.agregar("Elemento10");
+  
+  var buscarNumero= misElementos.buscar(5);
+  print(buscarNumero);
+  
+}
+  
+
+class Eiffel{
+  
+  List <String> elementos=[];
+  
+  void agregar ( String text ) { 
+    if(elementos.length==0 || elementos.length % 2 !=0){
+       elementos.add(text); 
+    }
+    else{
+      elementos.insert(elementos.length,text);
+    }
+     
+  }
+  
+  String buscar (int num){
+    if (elementos.contains(elementos[num])){
+      print(elementos[num]); 
+    }else{
+       print("No hay dato en esa posición");   
+  }
+    }
+  
+}
